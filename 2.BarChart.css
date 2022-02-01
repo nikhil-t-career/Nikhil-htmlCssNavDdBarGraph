@@ -1,78 +1,82 @@
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  background-color: white;
-  color: black;
-}
-
 .container {
-  background-color: rgb(245, 240, 240);
-  width: 500px;
-  margin: 50px auto 0;
-  padding: 20px;
-}
-
-li {
-  position: relative;
-  list-style: none;
-  margin: 50px 0;
-  font-weight: 500;
-}
-
-li:before {
-  content: "";
+  background-color: rgb(233, 231, 231);
   position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+.container article {
+  display: inline-block;
+}
+
+div {
+  width: 40px;
+  height: 300px;
+  margin: 20px;
+  background-color: rgb(202, 198, 192);
+}
+
+#bar1 {
+  background-color: white;
   width: 100%;
-  height: 15px;
-  background-color: lightblue;
-  border-radius: 2000px;
+  height: 50%;
+  animation-name: fillBar1;
+  animation-duration: 0.8s;
 }
 
-li:after {
-  content: "";
-  position: absolute;
-  top: calc(100% + 10px);
-  left: 0;
-  width: 0;
-  height: 15px;
-  background-color: darkblue;
-  border-radius: 2000px;
-  animation-duration: 0.7s;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
-}
+@keyframes fillBar1 {
+  0% {
+    height: 100%;
+    background-color: white;
+  }
 
-li.bar1:after {
-  animation-name: bar1;
-}
-
-@keyframes bar1 {
-  to {
-    width: 30%;
+  100% {
+    height: 50%;
+    background-color: white;
   }
 }
 
-li.bar2:after {
-  animation-name: bar2;
+#bar2 {
+  background-color: white;
+  width: 100%;
+  height: 25%;
+  animation-name: fillBar2;
+  animation-duration: 0.8s;
 }
 
-@keyframes bar2 {
-  to {
-    width: 40%;
+@keyframes fillBar2 {
+  0% {
+    height: 100%;
+    background-color: white;
+  }
+
+  100% {
+    height: 25%;
+    background-color: white;
   }
 }
 
-li.bar3:after {
-  animation-name: bar3;
+#bar3 {
+  background-color: white;
+  width: 100%;
+  height: 20%;
+  animation-name: fillBar3;
+  animation-duration: 0.8s;
 }
 
-@keyframes bar3 {
-  to {
-    width: 80%;
+@keyframes fillBar3 {
+  0% {
+    height: 100%;
+    background-color: white;
+  }
+
+  100% {
+    height: 20%;
+    background-color: white;
   }
 }
