@@ -1,7 +1,8 @@
 .container {
   background-color: rgb(233, 231, 231);
   position: absolute;
-  margin-top: 5%;
+
+  margin-top: 10%;
   margin-left: 40%;
 }
 
