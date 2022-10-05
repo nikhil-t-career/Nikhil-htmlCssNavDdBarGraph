@@ -1,0 +1,82 @@
+.container {
+  background-color: rgb(233, 231, 231);
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 40%;
+}
+
+h1,
+h4 {
+  text-align: center;
+}
+
+.container article {
+  display: inline-block;
+}
+
+div {
+  width: 40px;
+  height: 300px;
+  margin: 20px;
+  background-color: rgb(202, 198, 192);
+}
+
+#bar1 {
+  background-color: white;
+  width: 100%;
+  height: 50%;
+  animation-name: fillBar1;
+  animation-duration: 0.8s;
+}
+
+@keyframes fillBar1 {
+  0% {
+    height: 100%;
+    background-color: white;
+  }
+
+  100% {
+    height: 50%;
+    background-color: white;
+  }
+}
+
+#bar2 {
+  background-color: white;
+  width: 100%;
+  height: 25%;
+  animation-name: fillBar2;
+  animation-duration: 0.8s;
+}
+
+@keyframes fillBar2 {
+  0% {
+    height: 100%;
+    background-color: white;
+  }
+
+  100% {
+    height: 25%;
+    background-color: white;
+  }
+}
+
+#bar3 {
+  background-color: white;
+  width: 100%;
+  height: 20%;
+  animation-name: fillBar3;
+  animation-duration: 0.8s;
+}
+
+@keyframes fillBar3 {
+  0% {
+    height: 100%;
+    background-color: white;
+  }
+
+  100% {
+    height: 20%;
+    background-color: white;
+  }
+}
